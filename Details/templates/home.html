@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Soumen Samanta</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a web developer,
+                <br>experties is to create a website and design, Frontend design and Backend design
+            </p>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/soumen.samanta.79025648" target="_blank" style="--i:1"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/i_am_soumen_._/" target="_blank" style="--i:2"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/Soumen9382" target="_blank" style="--i:3"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/soumen-samanta-029aaa239/" target="_blank" style="--i:4"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="{% url 'about' %}" class="btn-box">More about me</a>
+        </div>
+
+        <div class="picture">
+            <img src="{% static 'image/img.jpg' %}" class="my-photo" alt="photo">
+        </div>
+    </section>
+{% endblock content %}
+
+
+
+{% block javaScript %}
+    <script src="{% static 'js/home.js' %}"></script>
+{% endblock javaScript %}

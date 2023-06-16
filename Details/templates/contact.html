@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5 ">CONTACT ME</h1>
+        <div class="row text-white mb-5">
+            <p class="mx-auto mb-5">
+                Do you have any questuions? Please don't hasitate to contact. 
+                I will come back to you within a matter of hours to help you.
+            </p>
+        </div>
+
+        <div class="contact">
+            <div class="item">
+                <a href="https://goo.gl/maps/xmcs9it1dh8F7jHG7" target="_blank" class="anchore">
+                    <i class='bx bx-current-location'></i>
+                    <p>Kolkata, West Bengal, India</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://connect-soumensamanta.netlify.app/" target="_blank" class="anchore">
+                    <i class="fa-solid fa-globe fa-xs"></i>
+                    <p>Visit My Contact Page</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="mailto:soumensamanta112233@gmail.com" target="_blank" class="anchore">
+                    <i class='bx bx-envelope'></i>
+                    <p>Send a e-mail</p>
+                </a>
+            </div>
+        </div>    
+        
+    </div>
+
+    <div class="sci social-media">
+        <a href="https://www.facebook.com/soumen.samanta.79025648" target="_blank" style="--i:1"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/i_am_soumen_._/" target="_blank" style="--i:2"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://twitter.com/Soumen9382" target="_blank" style="--i:3"><i class='bx bxl-twitter' ></i></a>
+        <a href="https://www.linkedin.com/in/soumen-samanta-029aaa239/" target="_blank" style="--i:4"><i class='bx bxl-linkedin'></i></a>
+    </div>
+   
+{% endblock content %}

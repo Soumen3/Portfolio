@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+{% endblock css %}
+
+
+{% block content %}
+    <header class="header">Projects</header>
+    <div class="content">
+       
+
+        <div class="projects">
+            <section class="project">
+                <img src="{% static 'image/project1.png' %}" alt="" class="image" id="project1">
+                <label for="project1">StudentQ(Full-Stack Web Development) </label>
+            </section>
+
+            <section class="project">
+                <img src="{% static 'image/project2.png' %}" alt="" class="image" id="project2">
+                <label for="projects">MiniBlog (Using Django) </label>
+            </section>
+            
+            <div class="desc">
+                <a target="_blank" href="https://github.com/Soumen3"><i class='bx bxl-github' ></i></a>
+                <p>For more Projects visit my Github Profile</p>
+            </div>
+            
+        </div>
+    </div>
+{% endblock content %}

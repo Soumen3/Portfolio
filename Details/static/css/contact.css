@@ -1,0 +1,146 @@
+
+/* 
+div.item{
+    display: flex;
+    justify-content: center;
+    row-gap: 1rem;
+} */
+
+.item .anchore i {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
+
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    text-decoration: none;
+    transition:.5s ease all ;
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.item .anchore i:hover{
+    color: #081b29;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.item .anchore p{
+    color: #fff;
+}
+
+div.item a {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    display: grid;
+    row-gap: 1.5rem;
+    justify-content: center;
+}
+
+div.social-media {
+    justify-content: center;
+    display: flex;
+    min-height: 20vh;
+    align-items: self-end;
+}
+
+div.social-media a{
+    align-items: center;
+}
+
+div p {
+    padding: 0 10px;
+    text-align: justify;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .2s;
+}
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+h1{
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .2s;
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.sci{
+    display: flex;
+    flex-direction: row;
+}
+
+.sci a i{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* background: transparent; */
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    text-decoration: none;
+    transition:.5s ease all ;
+    margin: 30px 15px 30px 0px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.sci a i:hover{
+    color: #081b29;
+    background: #0ef;
+    box-shadow: 0 0 20px #0ef;
+} 
+
+

@@ -2,6 +2,12 @@
 {% load static %}
 
 {% block css %}
+<style>
+    .form-control:focus {
+      border: 2px solid red;
+    }
+
+  </style>
     <link rel="stylesheet" href="{% static 'css/contact.css' %}">
 {% endblock css %}
 
@@ -10,37 +16,75 @@
     <div class="container mt-5">
         <h1 class="text-center mb-5 ">CONTACT ME</h1>
         <div class="row text-white mb-5">
-            <p class="mx-auto mb-5">
-                Do you have any questuions? Please don't hasitate to contact. 
-                I will come back to you within a matter of hours to help you.
+            <p class="mx-auto mb-5" style="justify-connect:center; text-align:center">
+                Have a question, project idea, or just want to say hello? Feel free to reach out!<br><br>
+
+                📧 Email: <a href="mailto:soumensamanta112233@gmail.com" target="_blank" class="anchore">soumensamanta112233@gmail.com</a></br>
+                📬 Drop me a message using the form below.</br>
+                📱 or, contact with me in my social platform </br><br>
+                I'm excited to hear from you!
             </p>
+            
+
         </div>
 
-        <div class="contact">
-            <div class="item">
-                <a href="https://goo.gl/maps/xmcs9it1dh8F7jHG7" target="_blank" class="anchore">
-                    <i class='bx bx-current-location'></i>
-                    <p>Kolkata, West Bengal, India</p>
-                </a>
+        <div class="email_contact">
+
+            {% comment %} email {% endcomment %}
+            <div class="container">
+                <form action="https://send.pageclip.co/ub3u7FtKoFF2s91AM0RF8MCoN1v193Gb/email1-form" class="pageclip-form" method="post">
+                    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+                    
+                    <div class="mb-3 anime">
+                        <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Abc" required>
+                    </div>
+                    <div class="mb-3 anime">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3 anime">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                    </div>
+                  
+                    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+                    <button type="submit" class="pageclip-form__submit item">
+                      <span>Send</span>
+                    </button>
+                  </form>
             </div>
-            <div class="item">
-                <a href="https://connect-soumensamanta.netlify.app/" target="_blank" class="anchore">
-                    <i class="fa-solid fa-globe fa-xs"></i>
-                    <p>Visit My Contact Page</p>
-                </a>
-            </div>
-            <div class="item">
-                <a href="mailto:soumensamanta112233@gmail.com" target="_blank" class="anchore">
-                    <i class='bx bx-envelope'></i>
-                    <p>Send a e-mail</p>
-                </a>
-            </div>
-        </div>    
+
+            {% comment %} icons  {% endcomment %}
+            <div class="contact">
+                <div class="item">
+                    <a href="https://goo.gl/maps/xmcs9it1dh8F7jHG7" target="_blank" class="anchore">
+                        <i class='bx bx-current-location'></i>
+                        <p>Kolkata, West Bengal, India</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="https://connect-soumensamanta.netlify.app/" target="_blank" class="anchore">
+                        <i class="fa-solid fa-globe fa-xs"></i>
+                        <p>Visit My Contact Page</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="mailto:soumensamanta112233@gmail.com" target="_blank" class="anchore">
+                        <i class='bx bx-envelope'></i>
+                        <p>Send a e-mail</p>
+                    </a>
+                </div>
+            </div>    
+
+        </div>
         
     </div>
 
+    
+
     <div class="sci social-media">
-        <a href="https://www.facebook.com/soumen.samanta.79025648" target="_blank" style="--i:1"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.facebook.com/soumen.programmer/" target="_blank" style="--i:1"><i class='bx bxl-facebook'></i></a>
         <a href="https://www.instagram.com/i_am_soumen_._/" target="_blank" style="--i:2"><i class='bx bxl-instagram' ></i></a>
         <a href="https://twitter.com/Soumen9382" target="_blank" style="--i:3"><i class='bx bxl-twitter' ></i></a>
         <a href="https://www.linkedin.com/in/soumen-samanta-029aaa239/" target="_blank" style="--i:4"><i class='bx bxl-linkedin'></i></a>

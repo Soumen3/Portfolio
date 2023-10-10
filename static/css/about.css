@@ -59,7 +59,7 @@ span.name{
 
 
 p.desc{
-    font-size: 20px;
+    font-size: 15px;
     text-align: justify;
     opacity: 0;
     animation: slideTop 1s ease forwards;

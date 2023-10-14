@@ -153,7 +153,7 @@ input:focus{
 }
 
 
-button{
+.send_button{
     width: 7rem;
     height: 3em;
     border: 2px solid #0ef;
@@ -168,7 +168,7 @@ button{
     animation-delay: calc(.2s * var(--i));
 }
 
-button:hover{
+.send_button:hover{
     color: #081b29;
     background: #0ef;
     box-shadow: 0 0 20px #0ef;

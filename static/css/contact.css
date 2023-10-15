@@ -148,8 +148,16 @@ a:hover{
     flex-direction: row;
 }
 
-input:focus{
-    border-color: rgb(227, 139, 102);
+.inputField{
+    border: 1px solid gray;
+    background: transparent;
+    color: #fff;
+}
+.inputField:focus{
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px #0ef;
+    color: #fff;
+    background: transparent;
 }
 
 
@@ -157,7 +165,7 @@ input:focus{
     width: 7rem;
     height: 3em;
     border: 2px solid #0ef;
-    border-radius: 20%;
+    border-radius: 10px;
     color: #0ef;
     background: transparent;
     text-decoration: none;
@@ -175,6 +183,7 @@ input:focus{
 }
 
 .anime{
+    opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
